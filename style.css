@@ -76,7 +76,10 @@ header ul li{
 
 /* Header For mobile */
 
-@media screen and (min-width:320px) and (max-width:800px) { 
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
 
     .mobileNav {
         display: flex;
@@ -98,6 +101,28 @@ header ul li{
     }
 }
 
+@media screen and (min-width:320px) and (max-width:800px)
+{ 
+
+    .mobileNav {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid black;
+        width: 100%;
+        height: 64px;
+    }
+
+    .main-headerleft,
+    .main-headerright, header ul {
+        display: none;
+    }
+
+    .mobileNav li:hover{
+        transform: scale(1.15);
+    }
+}
 
 /* First Hero on Website */
 
@@ -161,6 +186,109 @@ button :hover {
 
 /* First Hero Mobile */
 
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+    {
+        .hero {
+            width: 100%;
+        }
+    
+        .hero-text{
+            display: inline-block;
+            width: 95%;
+            justify-content: center;
+            padding-left: 30px;
+        }
+    
+        .imagesize{
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            vertical-align: middle;
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:800px)
+    {
+        .hero {
+            width: 100%;
+        }
+    
+        .hero-text{
+            display: inline-block;
+            width: 95%;
+            justify-content: center;
+            padding-left: 30px;
+        }
+    
+        .imagesize{
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            vertical-align: middle;
+        }
+    }
+    
+    /* Second Hero on website  */
+    
+    .left{
+        float: left;
+        width: 60%;
+        padding: 46px 24px 32px;
+        font-family: 'raleway',sans-serif;
+        font-size: 20px;
+    }
+    
+    .left h2{
+        margin-top: 10px;
+    }
+    
+    .left br {
+        margin-top: 5px;
+    }
+    
+    .left p{
+        margin-top: 10px;
+    }
+    
+    .right{
+        border-left: 1px solid lightgray;
+        display: inline-block;
+        width: 40%;
+        padding-top: 30px;
+    }
+    .subhero img{
+        width: 100%;
+    }
+    .row{
+        padding: 16px;
+    }
+    .row:hover{
+        background-color: #afd5fc;
+        transition: all 700ms linear 200ms;
+    }
+    .row .text{
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        font-family: 'raleway',sans-serif;
+        font-size: 20px;
+    }
+    .row img{
+        box-sizing: border-box;
+        width: 35%;
+        vertical-align: middle;
+        height: auto;
+    }
+    .mobile-img{
+        display: none;
+    }
+
+    /* Second Hero Mobile */
+    
 @media screen and (min-width:320px) and (max-width:800px) {
     
     .hero {
@@ -181,6 +309,31 @@ button :hover {
         vertical-align: middle;
     }
 }
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+        {
+    .hero {
+        width: 100%;
+    }
+
+    .hero-text{
+        display: inline-block;
+        width: 95%;
+        justify-content: center;
+        padding-left: 30px;
+    }
+
+    .imagesize{
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        vertical-align: middle;
+    }
+}
+
 
 /* Second Hero on website  */
 
@@ -257,6 +410,27 @@ button :hover {
     }
 }
 
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+        {    .left {
+            width: 100%;
+        }
+    
+        .right{
+            width: 100%;
+            text-align: center;
+        }
+    
+        .imagesize{
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            vertical-align: middle;
+        }
+    }
+
 /* Third Hero on Website */
 
 .start-learning{
@@ -320,6 +494,32 @@ button :hover {
         padding-bottom: 50px;
     }
 }
+
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+        {.card {
+            width: 100%;
+            height: 360px;
+            padding-bottom: 10px;
+        }
+    
+        .start-learning {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    
+        .text{
+            width: 100%;
+            vertical-align: middle;
+            padding-bottom: 50px;
+        }
+        .course card p{
+            padding-bottom: 50px;
+        }
+    }
 
 /* footer styling */
 
